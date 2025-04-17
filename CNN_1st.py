@@ -11,7 +11,8 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, accuracy_s
 
 age_labels = ['30_day_crops', '45_day_crops', '60_day_crops', '180_day_crops', '330_day_crops', '720_day_crops']
 label_to_idx = {label: idx for idx, label in enumerate(age_labels)}
-
+print(label_to_idx)
+"""
 class RPEDataset(Dataset):
     def __init__(self, root_dir, transform=None):
         self.root_dir = root_dir
@@ -106,3 +107,4 @@ disp.plot(cmap='Blues', xticks_rotation=45)
 plt.title("CNN Confusion Matrix")
 plt.tight_layout()
 plt.show()
+"""
