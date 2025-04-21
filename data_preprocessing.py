@@ -33,7 +33,7 @@ class RPEDataset(Dataset):
     
     def __getitem__(self, index):
         img_path, label = self.samples[index]
-        image = io.read(img_path).convert('RGB')
+        image = io.imread(img_path)
         if self.transform:
             image = self.transform(image)
-        return image, label
+        return (image, label)
