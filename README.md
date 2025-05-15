@@ -1,9 +1,9 @@
 # RPE-classification
-MATH 3350 project to classify age of RPE cells using CNN and SVM
+MATH 3350 project to classify age of RPE cells using CNN, SVM, and KNN
 
-This project is built using python in Jupyter notebook
+This project is built using python 
 
-The libraries used are: \
+# Libraries
 PyTorch \
 Numpy \
 Matplotlib \
